@@ -1,0 +1,36 @@
+header {
+    border: 1px solid #001219ff;
+}
+
+main {
+    background-color: #94d2bdff;
+    margin: 10px;
+}
+
+.stories {
+    display: flex;    
+    flex-direction: column;
+}
+
+.story {
+    background-color: #e9d8a6ff;
+    border-bottom: #001219ff 1px solid;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.story-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.story-heading {
+    display: flex;
+}
+
+.story-subheading {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 10px;
+}
