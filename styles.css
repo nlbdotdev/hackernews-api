@@ -1,22 +1,67 @@
-header {
-    border: 1px solid #001219ff;
+/*  --- Global --- */
+
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
-main {
-    background-color: #94d2bdff;
-    margin: 10px;
+.center {
+    margin: 10px 10%;
+    background-color: #ededed;
 }
+
+/* --- Nav --- */
+
+header {
+    border: 1px solid #001219ff;
+    background-color: #fb9b41;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.nav_heading {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* --- Story --- */
 
 .stories {
     display: flex;    
     flex-direction: column;
+    padding: 10px 5px;
 }
 
 .story {
-    background-color: #e9d8a6ff;
-    border-bottom: #001219ff 1px solid;
-    margin-bottom: 5px;
+    background-color: #d6e1e9;
+    margin: 0px 0px 10px;
     display: flex;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #888888;
+}
+
+.story-points {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 .story-content {
@@ -25,12 +70,52 @@ main {
     flex-direction: column;
 }
 
+.story-author {
+    font-size: small;
+}
+
 .story-heading {
-    display: flex;
+    font-size: x-large;
+}
+
+.story-heading > a {
+    text-decoration: none;
+    color: #101445;
+}
+
+.story-heading > a:hover {
+    text-decoration: underline;
+    color: #2fb6c3;
 }
 
 .story-subheading {
+    font-size: small;
     display: flex;
-    /* justify-content: space-around; */
     gap: 10px;
+}
+
+/* --- Mobile --- */
+
+@media only screen and (max-width: 1000px) {
+
+    .center {
+        margin: 10px 0%;
+        background-color: #ededed;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .story-author {
+        font-size: smaller;
+    }
+
+    .story-heading {
+        font-size: large;
+    }
+
+    .story-subheading {
+        font-size: smaller;
+    }
 }
